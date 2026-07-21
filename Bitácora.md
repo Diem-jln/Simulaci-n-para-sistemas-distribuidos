@@ -1,4 +1,4 @@
-# Bitácora Unidad 1: Aleatoriedad 🎲
+# Bitácora Unidad 1: Aleatoriedad
 **Estudiante:** Diego Sebastian Molina Julian
 **ID:** 000621964
 **Curso:** Simulacion Para Sistemas Interactivos
@@ -19,7 +19,7 @@ De los eleemntos proporcionados, destacaria tres ideas fundamentales:
 
 3. **Los datosy el azar algorítmico:** Anadol logra llevar estos sistemas a otra escala interactuando con multiples conjuntos de datos e incorporando inteligencia artificial. En sus obras, el uso de ruido algorítmico y variaciones fluidas permite que la información dura y estructurada adquiera formas líquidas y que se mantienen en constante mutación. 
 
-**En conclusión:** Puedo concluir esta actividad diciendo que: el artista ya no crea la obra final, sino que el artista es quien crea el ecosistema que la produce. Y la aleatoriedad se convierte en el motor que da vida a cada ejecución de ese sistema, asegurando que aunque existan límites definidos, el resultado sea infinito.
+Puedo concluir esta actividad diciendo que: el artista ya no crea la obra final, sino que el artista es quien crea el ecosistema que la produce. Y la aleatoriedad se convierte en el motor que da vida a cada ejecución de ese sistema, asegurando que aunque existan límites definidos, el resultado sea infinito.
 
 ---
 
@@ -29,6 +29,16 @@ De los eleemntos proporcionados, destacaria tres ideas fundamentales:
 * **Notas de análisis:**
   [Escribe aquí qué comprendiste sobre el funcionamiento básico del Random Walk tradicional.]
 
+
+
+
+Al estudiar el código base del *Random Walk* tradicional, he podido identificar los siguientes conceptos clave sobre su funcionamiento y estructura:
+
+1. **Estructura Orientada a Objetos (Clase Walker):** El código encapsula la lógica en una entidad o "agente". Este agente tiene un *estado* (su posición en el canvas con las variables `x` y `y`) y un *comportamiento* (las funciones para mostrarse `display()` y moverse `step()`). Esto hace que el código sea modular y escalable si quisiéramos agregar múltiples caminantes.
+2. **Aleatoriedad Uniforme y Decisiones Discretas:** En la función `step()`, el caminante toma una decisión en cada fotograma sobre hacia dónde moverse (arriba, abajo, izquierda o derecha). Esto se logra generando un número aleatorio entero. Como la función de números aleatorios básica devuelve valores con una **distribución uniforme**, todas las direcciones tienen exactamente la misma probabilidad de ser elegidas (25% cada una, o un porcentaje igual si se incluyen las diagonales).
+3. **El Comportamiento Emergente (Movimiento errático):** Visualmente, el resultado es una línea que traza un camino errático y tembloroso que recuerda al polvo flotando en el aire o al movimiento browniano. Una observación importante es que, como no hay ninguna tendencia o sesgo (todas las opciones son igual de probables), el caminante tiende a quedarse merodeando cerca de su punto de origen o de su posición actual durante mucho tiempo, sin lograr "viajar" grandes distancias de manera eficiente.
+
+**Conclusión:** Este ejemplo demuestra cómo reglas de decisión muy simples y estrictamente probabilísticas, ejecutadas repetidamente en un bucle, generan un patrón visual impredecible que simula fenómenos básicos de la naturaleza.
 ---
 
 ## Actividad 03: Distribuciones de Probabilidad
