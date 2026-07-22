@@ -26,11 +26,6 @@ Puedo concluir esta actividad diciendo que: el artista ya no crea la obra final,
 ## Actividad 02: Caminatas Aleatorias
 > *Análisis del código Example 0.1: A Traditional Random Walk.*
 
-* **Notas de análisis:**
-  [Escribe aquí qué comprendiste sobre el funcionamiento básico del Random Walk tradicional.]
-
-
-
 
 Al estudiar el código base del *Random Walk* tradicional, he podido identificar los siguientes conceptos clave sobre su funcionamiento y estructura:
 
@@ -44,33 +39,33 @@ Al estudiar el código base del *Random Walk* tradicional, he podido identificar
 ## Actividad 03: Distribuciones de Probabilidad
 
 ### 1. Diferencia conceptual
-* **Distribución Uniforme:** [Escribe tu definición en tus propias palabras].
-* **Distribución No Uniforme:** [Escribe tu definición en tus propias palabras].
+* **Distribución Uniforme:** Ocurre cuando todos los resultados posibles tienen exactamente la misma probabilidad de suceder. Es el equivalente a lanzar un dado de 6 caras; cada número tiene un 16% de probabilidad de salir. En programación, la función estándar `random()` suele generar una distribución uniforme, lo que en una caminata aleatoria significa que moverse arriba, abajo, izquierda o derecha tiene un 25% de posibilidades cada uno, resultando en un movimiento sin una dirección aparente.
+* **Distribución No Uniforme:** Ocurre cuando ciertos resultados tienen una probabilidad mayor de suceder que otros. Es como lanzar un dado trucado para que el número 6 salga más veces. En el arte generativo y la simulación, usar distribuciones no uniformes nos permite introducir tendencias y comportamientos en un sistema que sigue siendo aleatorio.
 
 ### 2. Implementación: Tendencia a la derecha
-* **Enlace al sketch en p5.js:** [Inserta el link a tu código aquí]
-* **Comentarios:** [Breve descripción de cómo modificaste el código para favorecer la derecha].
+* **Enlace al p5.js:** https://editor.p5js.org/natureofcode/sketches/5C69XyrlsR
+* **Comentarios:** en lugar de poner todas las opciones por igual, aumente el rango matemático de la derecha. El caminante sigue moviéndose de forma aleatoria, pero ahora las matemáticas están a favor de avanzar hacia la derecha en la pantalla..
 
 ---
 
 ## Actividad 04: Distribución Normal
-* **Enlace al sketch en p5.js:** [Inserta el link a tu código aquí]
+* **Enlace al p5.js:** https://editor.p5js.org/Diem-jln/sketches/1nw4LNZKh
 * **Descripción de la visualización:**
-  [Explica brevemente cómo visualizaste la campana de Gauss de una manera diferente a la del ejemplo base].
+Se me ocurrio que en lugar de hacer una "salpicadura" unidimensional de puntos negros que se acumulan horizontalmente, una forma de representarlo de manera mas llamativa era hacerlo circular.
 
 ---
 
 ## Actividad 05: Distribución Personalizada (Lévy Flight)
-* **Enlace al sketch en p5.js:** [Inserta el link a tu código aquí]
-* **Resultados esperados:** [¿Qué esperabas ver en el canvas antes de programarlo?]
-* **Justificación:** [Explica por qué usaste esta técnica y qué comportamiento visual lograste al combinar pasos cortos con saltos largos].
+* **Enlace al p5.js:** https://editor.p5js.org/Diem-jln/sketches/whrucBYyq
+* **Resultados esperados:** Específicamente, esperaba observar manchas densas de tinta donde el caminante pasa mucho tiempo dando pasos cortos y explorando exhaustivamente un área pequeña. Luego, esperaba ver líneas rectas largas y esporádicas que conectaran con esas manchas 
+* **Justificación:** lo acomode de modo que hay un 99% de probabilidad de dar pasos cortos y 1% de dar un salto grande porque es la manera mas sencilla y efectiva de imitar a la naturaleza..
 
 ---
 
 ## Actividad 06: Ruido Perlin
-* **Enlace al sketch en p5.js:** [Inserta el link a tu código aquí]
-* **Resultados esperados:** [¿Qué esperabas ver con la transición suave del ruido Perlin?]
-* **Justificación de la visualización:** [Explica por qué decidiste visualizar el ruido de esta manera en particular y no como un simple gráfico 1D].
+* **Enlace al p5.js:** https://editor.p5js.org/Diem-jln/sketches/TUSVJ_2Jl
+* **Resultados esperados:** Mi intension era que al correr el codigo pudiera ver lo mas parecido a una criatura "viva" aprovechando que los bordes estarian en cosntante movimiento
+* **Justificación de la visualización:** Quería demostrar visualmente la característica más importante del ruido Perlin: la continuidad.
 
 ---
 
